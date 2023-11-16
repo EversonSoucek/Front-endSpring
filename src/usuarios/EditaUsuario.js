@@ -84,7 +84,7 @@ export default function EditaUsuario() {
               Enviar
             </button>
             <Link className="btn btn-outline-danger mx-2" to="/">
-              Cancel
+              Cancelar
             </Link>
           </form>
         </div>
