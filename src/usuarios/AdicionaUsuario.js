@@ -14,7 +14,7 @@ export default function AdicionaUsuario() {
   const { nome, nomeDeUsuario, email } = usuario;
 
   const AomudarInput = (e) => {
-    setUsuario({ ...usuario, [e.target.nome]: e.target.value });
+    setUsuario({ ...usuario, [e.target.name]: e.target.value });
   };
 
   const Aosubmeter = async (e) => {
@@ -29,16 +29,16 @@ export default function AdicionaUsuario() {
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
           <h2 className="text-center m-4">Registrar Usuário</h2>
 
-          <form Aosubmeter={(e) => Aosubmeter(e)}>
+          <form onSubmit={(e) => Aosubmeter(e)}>
             <div className="mb-3">
-              <label htmlFor="Name" className="form-label">
+              <label htmlFor="nome" className="form-label">
                 Nome
               </label>
               <input
                 type={"text"}
                 className="form-control"
                 placeholder="Digite seu nome"
-                nome="nome"
+                name="nome"
                 value={nome}
                 onChange={(e) => AomudarInput(e)}
               />
@@ -51,7 +51,7 @@ export default function AdicionaUsuario() {
                 type={"text"}
                 className="form-control"
                 placeholder="Digite seu nome de usuário"
-                nome="nomeDeUsuario"
+                name="nomeDeUsuario"
                 value={nomeDeUsuario}
                 onChange={(e) => AomudarInput(e)}
               />
@@ -64,7 +64,7 @@ export default function AdicionaUsuario() {
                 type={"text"}
                 className="form-control"
                 placeholder="Digite seu e-mail"
-                nome="email"
+                name="email"
                 value={email}
                 onChange={(e) => AomudarInput(e)}
               />
