@@ -35,6 +35,11 @@ export default function Home() {
                 <td>{usuario.nome}</td>
                 <td>{usuario.nomeDeUsuario}</td>
                 <td>{usuario.email}</td>
+                <td>
+                    <button className='btn btn-primary mx-2'>Visualizar</button>
+                    <button className='btn btn-outline-primary mx-2'>Editar</button>
+                    <button className='btn btn-danger mx-2'>Deletar</button>
+                </td>
             </tr>
         ))
    }
