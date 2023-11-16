@@ -1,5 +1,11 @@
 # Projeto FullStack Com spring boot e React
 
+<div style:>
+    <img src="https://img.shields.io/badge/Status-Completo-brightgreen"> 
+    <img src='https://img.shields.io/github/languages/top/EversonSoucek/Front-endSpring?style=plastic'>
+    <img src='https://img.shields.io/github/languages/code-size/EversonSoucek/Front-endSpring'>
+</div>
+
 Este é o front end do projeto onde se pode Adicionar, editar, visualizar e deletar usuários tudo com uma conexão ao banco de dados
 
 <img src='./image.png'>
